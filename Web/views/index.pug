@@ -1,0 +1,50 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="/css/index.css")
+        script(src="https://kit.fontawesome.com/33f06ad48a.js" crossorigin="anonymous")
+    body
+        mixin Dialog(id, w, h, title)
+            div.dialog(id=id style=`width: ${w}px; height: ${h}px; display:none;`)
+                div.dialog-head= title || "Undefined dialog"
+                    div.dialog-closeBtn
+                        i(class="fas fa-times")
+                div.dialog-body
+                    block
+
+        div#sub
+            div#toastlist
+        div.tooltip#tooltip-text
+
+        div.tooltip#tooltip-item
+            div.tt-title#tt-item-title
+            div#tt-item-body
+                img.item-view#tt-item-view
+                div#tt-item-ability
+            div#tt-item-info
+
+        canvas#space
+
+        div#actives
+            div.active#createStar
+                i.fas.fa-sun.activeIcon(tt-active="createStar")
+            div.active#createPlanet
+                i.fas.fa-globe-asia.activeIcon(tt-active="createPlanet")
+            div.active#edit
+                i.fas.fa-star-half-alt.activeIcon(tt-active="edit")
+
+        
+        
+        script(src="/lang" type="text/javascript")
+
+        script(src="js/kit/SocketEngine.js")
+        script(src="js/kit/Socket.js")
+        script(src="js/kit/Util.js")
+        script(src="js/kit/Action.js")
+        script(src="js/kit/DOMShell.js")
+        script(src="js/kit/Lang.js")
+        script(src="js/kit/Dialog.js")
+        script(src="js/kit/Tooltip.js")
+        script(src="js/kit/Toast.js")
+        script(src="js/kit/Hold.js")
+        script(src="js/index.js")

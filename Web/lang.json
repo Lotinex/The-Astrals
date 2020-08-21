@@ -1,0 +1,30 @@
+{
+    "icons" : {
+        "user" : "fas fa-user"
+    },
+    "tooltip" : {
+        "text" : {
+
+        },
+        "active" : {
+            "createStar-name" : "새 항성 생성",
+            "createStar-info" : "행성들의 중심이 될 새 항성을 만듭니다.<br>항성은 보유한 에너지를 모두 소모하면 다음 상태로 변합니다.",
+            "createPlanet-name" : "새 행성 생성",
+            "createPlanet-info" : "항성 주위를 공전할 새 행성을 만듭니다.<br>행성은 항성에 너무 가까이 있거나<br> 너무 멀어진 상태가 되면 치명적일 수 있습니다.",
+            "edit-name" : "천체 편집",
+            "edit-info" : "생성한 천체를 편집합니다."
+        },
+        "entity" : {
+            "star" : "항성 임니다. 부여된 엔티티 id : {id}",
+            "planet" : "test : {id}"
+        },
+        "item" : {
+            "ungasword-name" : "연갸의 검",
+            "ungasword-info" : "연갸의 검 임니다. trtrtrtrtrtrtrt",
+            "ungasword-ability" : ""
+        },
+        "item-ability" : {
+            "health" : "%체력% + [{value}]"
+        }
+    }
+}
